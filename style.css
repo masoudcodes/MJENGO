@@ -85,10 +85,14 @@ header{
 header .logo{
     font-size: 2rem;
     color:var(--white);
+    margin-right: auto; /* Move the logo to the left */
+    margin-left: 0rem; /* Add some space to the left of the logo */
 }
 
 header .logo span{
     color:var(--blue);
+    /* margin-top: -0.2rem; /* Move the text up slightly * */
+    margin-bottom: 2rem;
 }
 
 
@@ -115,6 +119,26 @@ header label{
     visibility: hidden;
     opacity: 0;
 }
+/* Set the maximum width and height for the logo image */
+.logo img {
+    max-width: 100%; /* The image will not exceed the container's width */
+    max-height: 100px; /* Adjust this value as needed */
+    margin-right: 1rem; /* Add some spacing between the image and text */
+
+  }
+  /* Adjust the vertical alignment */
+.logo {
+    display: flex;
+    align-items: center; /* Align items at the top of the container */
+}
+
+
+.logo .logo-text {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+  
 
 .home{
     display: flex;
